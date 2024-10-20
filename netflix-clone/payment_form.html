@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>  
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .box{
+          width: 150px;
+          height: 50px;
+          border: 4px solid white;
+          margin:10px;
+        }
+        img{
+          height: 100%;
+          width: 100%;
+          object-fit: fill;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+    <form action=""> 
+        <h1 class="main_heading">Payment form</h1>
+        <p>Required Fields are followed by *</p>
+        <hr>
+        <h2>Contact information</h2>
+ <p>Name: *<input type="text" name="name" required  placeholder="enter your name"> </p>
+ <fieldset>
+    <legend>Gender *</legend> <p>
+            Male <input type="radio" name="gender" id="male" required> female <input type="radio" name="gender" id="female" required>
+
+        </p>
+
+    </fieldset>
+
+    <p>Address: <textarea name="address" id="address" cols="100" rows="8"> </textarea></p>
+    
+    <p>Email: *<input type="email" name="email" id="email" required placeholder="keshav@gmail.com"></p>
+    <p>Pincode: <input type="number" name="pincode" id="pincode" placeholder="123456"></p>
+   <hr>
+    <h2>Payment information </h2>
+    <span>Accepted cards</span>
+    <div class="box"><img src="images/visa.jpeg" ></div>
+    <p>
+        Card type: *
+        <select name="card_type" id="card_type" required>
+             <option value="">--Select a card type--</option>
+             <option value="visa"> visa</option>
+             <option value="rupay">Rupay</option>
+             <option value="masterclass">Mastercard</option>
+
+        </select>
+    </p>
+    <p>Card Number *<input type="number" name="card_number" id="card_number" required placeholder="xxxx-xxxx-xxxx-xxxx"></p>
+<p>
+    Expiration Date: *<input type="date" name="exp_date" id="exp_date" required>
+</p>
+<input type="submit" value="Pay Now">
+</div>
+
+</form>
+</body>
+</html>
