@@ -8,6 +8,32 @@ body {
   background-color: #111;
 }
 
+.netflix-btn {
+  background-color: #e50914; /* Netflix red */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.netflix-btn:hover {
+  background-color: #f40612; /* Slightly lighter red on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
 .row__poster {
   width: 100%;
   object-fit: contain;
